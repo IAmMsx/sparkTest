@@ -27,6 +27,7 @@ object Variable {
 
         val msx = new Student("msx", 22)
         msx.age = 23
+//        var `if` = 12;
 
     }
 
