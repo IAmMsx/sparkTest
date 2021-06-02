@@ -18,21 +18,32 @@ object StringTest {
         // 3. 字符串模板：通过$获取变量值
         println(s"${age}岁的${name1}在学习") // s""
 
-        val num:Float = 2.3456f
-        val num1:Double = 2.45645645
+        val num: Float = 2.3456f
+        val num1: Double = 2.45645645
         println(f"The num is $num1%3.2f") // f""
         println(raw"The num is $num1%3.2f") // raw""
 
         // 3引号表示字符串，保持多行字符串的原格式输出
-        val sql = s"""
-           |select *
-           |from
-           |    student
-           |where
-           |    name = $name1
-           |and
-           |    age > $age
-           |""".stripMargin
+        val sql =
+            s"""
+               |select *
+               |from
+               |    student
+               |where
+               |    name = $name1
+               |and
+               |    age > $age
+               |""".stripMargin
         println(sql)
+        println("***********************")
+
+        val b1: Byte = 10
+        val b2: Byte = (10 + 20) // 可以通过
+        println(b2)
+//        val b3: Byte = (b1 + 20)// 通不过
+        val b3: Byte = (b1 + 20).toByte //通过类型转换
+
+
+
     }
 }
