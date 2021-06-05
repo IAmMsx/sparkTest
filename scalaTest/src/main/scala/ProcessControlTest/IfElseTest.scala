@@ -42,8 +42,5 @@ object IfElseTest {
         val res: String = if (age >= 18) "成年" else "未成年"
         println(res)
 
-
     }
-
-
 }
