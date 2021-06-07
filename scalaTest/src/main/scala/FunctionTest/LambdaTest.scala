@@ -5,7 +5,7 @@ object LambdaTest {
         val stringToUnit: String => Unit = (name: String) => {
             println(name)
         }
-        val fun = stringToUnit
+        val fun: String => Unit = stringToUnit
         fun("masx")
 
         // 定义一个函数 以函数作为参数输入
@@ -25,9 +25,9 @@ object LambdaTest {
          * 3. 匿名函数只有一行可以省略大括号
          * 4. 如果参数只出现一次，参数省略且后面的参数可以用_代替
          */
-        f(name => println(name))
+        f((name: String) => println(name))
         println("***************************")
-        f(println(_))
+        f(println(_: String))
         println("***************************")
         // 5. 如果可以推断出当前传入的是函数体而不是调用语句，可以直接省略下划线
         f(println)
@@ -48,8 +48,8 @@ object LambdaTest {
         println(dualFunctionOneAndTwo(minus))
 
         // 简化
-        println(dualFunctionOneAndTwo((a, b) => a + b))
-        println(dualFunctionOneAndTwo(_ + _))
+        println(dualFunctionOneAndTwo((a: Int, b: Int) => a + b))
+        println(dualFunctionOneAndTwo((_: Int) + (_: Int)))
 
     }
 
