@@ -1,7 +1,7 @@
 package IterableTest
 
 /*
-    Array 定长不可变
+    Array 定长不可变 推荐通过运算符来操作数组
     增:(添加元素后返回新数组,原数组是不可变的)
         1. 添加数据到末尾 arr.:+(value) 返回新数组
         2. 添加数据到开头 arr.+:(value) 返回新数组
