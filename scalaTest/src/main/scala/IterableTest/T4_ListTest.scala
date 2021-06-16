@@ -11,7 +11,7 @@ package IterableTest
     遍历 1. list.foreach
         2. list.for
  */
-object ListTest {
+object T4_ListTest {
     def main(args: Array[String]): Unit = {
         // 1. 创建一个list
         val listTest: List[Int] = List[Int](1, 2, 3)

@@ -16,7 +16,7 @@ import scala.collection.mutable.ListBuffer
     插
     遍历
  */
-object ListBufferTest {
+object T5_ListBufferTest {
     def main(args: Array[String]): Unit = {
         // 1.
         val listBuffer1: ListBuffer[Int] = ListBuffer(1, 2, 3)

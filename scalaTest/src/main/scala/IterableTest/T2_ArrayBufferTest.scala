@@ -15,7 +15,7 @@ import scala.collection.mutable.ArrayBuffer
     查 arr(index)
     遍历
  */
-object ArrayBufferTest {
+object T2_ArrayBufferTest {
     def main(args: Array[String]): Unit = {
         //1.  创建可变数组
         val arr1 = new ArrayBuffer[Int]()

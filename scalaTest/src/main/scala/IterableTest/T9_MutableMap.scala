@@ -2,7 +2,7 @@ package IterableTest
 
 import scala.collection.mutable
 
-object MutableMap {
+object T9_MutableMap {
     def main(args: Array[String]): Unit = {
         // 1.
         val map1: mutable.Map[String, Int] = mutable.Map("a" -> 13,"hello" -> 3)

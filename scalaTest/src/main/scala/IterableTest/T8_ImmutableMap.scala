@@ -3,7 +3,7 @@ package IterableTest
     不可变map
 
  */
-object ImmutableMap {
+object T8_ImmutableMap {
     def main(args: Array[String]): Unit = {
         // 1.
         val map1: Map[String, Int] = Map("a" -> 13,"hello" -> 3)

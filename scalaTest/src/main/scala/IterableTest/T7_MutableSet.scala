@@ -2,7 +2,7 @@ package IterableTest
 
 import scala.collection.mutable
 
-object MutableSet {
+object T7_MutableSet {
     def main(args: Array[String]): Unit = {
         // 1. 创建
         val set1: mutable.Set[Int] = mutable.Set(13, 23, 12)

@@ -2,7 +2,7 @@ package IterableTest
 /*
     Set
  */
-object ImmtableSetTest {
+object T6_ImmtableSetTest {
     def main(args: Array[String]): Unit = {
 //        1.
         val setTest = Set(1, 1, 2, 3, 2, 4)

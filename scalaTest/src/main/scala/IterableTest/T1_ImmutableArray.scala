@@ -14,7 +14,7 @@ package IterableTest
     查: arr(index)
     遍历: 4.
  */
-object ImmutableArray {
+object T1_ImmutableArray {
     def main(args: Array[String]): Unit = {
         val arr = new Array[Int](10)
         //        println(arr.length) // 10
