@@ -38,6 +38,19 @@ object T14_HighLevelFunction {
 
         val flatMapList:List[String] = strings.flatMap((_:String).split(" "))
         println(flatMapList)
+
+        // 5. 分组 groupBy
+        // 分成奇偶两组
+        println("***************************")
+        val groupMap: Map[String, List[Int]] = listTest.groupBy((data: Int) => {
+            if (data % 2 == 0) "偶数" else "奇数"
+        })
+        println(groupMap)
+
+        // 6. 给定一组词汇，按照单词的首字母进行分组
+        println("***************************")
+        val wordList = List("China", "america", "alice", "Tom", "canada", "bob")
+        println(wordList.groupBy((_: String).charAt(0)))
     }
 
 }
