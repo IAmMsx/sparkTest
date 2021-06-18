@@ -20,5 +20,19 @@ object T1_Base {
         }
 
         println(matchDualOp('*', 2, 3))
+
+        // 3. 模式守卫
+        // 求一个整数的绝对值
+        def abs(num:Int):Int = {
+            num match {
+                case i if i>=0 => i
+                case i if i<0 => -i
+            }
+        }
+
+        val i: Int = abs(-1)
+        val i1: Int = abs(1)
+        println(i)
+        println(i1)
     }
 }
