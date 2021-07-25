@@ -7,6 +7,7 @@ object T8msx {
         val msx = new SparkConf().setMaster("local").setAppName("msx")
         val context = new SparkContext(msx)
 
+
         context.stop()
     }
 
