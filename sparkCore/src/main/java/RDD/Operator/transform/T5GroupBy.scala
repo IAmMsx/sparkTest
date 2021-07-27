@@ -15,7 +15,7 @@ object T5GroupBy {
 
         val rdd = sc.makeRDD(List("Hello", "Spark", "Scala","msx"), 2)
         val groupRDD = rdd.groupBy(_.charAt(0))
-        groupRDD.collect().foreach(println)
+    groupRDD.collect().foreach(println)
 
 
         sc.stop()
