@@ -8,7 +8,6 @@ object T14cogroup {
         val sparkConf = new SparkConf().setMaster("local[*]").setAppName("RDD")
         val sc = new SparkContext(sparkConf)
 
-        // 实现分区内排序，分区间最大值求和
         val rdd1 = sc.makeRDD(List(("a", 1), ("a", 2), ("c", 3)))
         val rdd2 = sc.makeRDD(List(("a", 4), ("a", 5), ("c", 6)))
 
