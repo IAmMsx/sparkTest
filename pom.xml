@@ -11,6 +11,7 @@
     <modules>
         <module>scalaTest</module>
         <module>sparkCore</module>
+        <module>SparkSQL</module>
     </modules>
 
     <properties>
